@@ -2,12 +2,14 @@ import Image from "next/image";
 import { PHONE_HREF, PHONE } from "@/lib/constants";
 
 const highlights = [
+  "Privatni sanitetski prevoz 0-24h",
+  "Usluga od kreveta do kreveta",
+  "Stižemo za ~15 minuta",
+  "Prevoz nepokretnih i slabo pokretnih lica",
+  "Medicinski transport u inostranstvo",
   "Opremljena sanitetska vozila",
-  "Obučeno medicinsko osoblje",
-  "Dostupni 24 sata, 7 dana nedeljno",
-  "Prevoz nepokretnih pacijenata",
-  "Povoljne cene usluga",
-  "Pouzdanost i tačnost",
+  "Opcija čekanja pacijenta",
+  "Povoljne cene — bez skrivenih troškova",
 ];
 
 export default function About() {
@@ -40,14 +42,16 @@ export default function About() {
             </h2>
 
             <p className="text-gray-500 leading-relaxed mb-6">
-              Help Trans 011 je specijalizovana firma za sanitetski prevoz u
-              Beogradu. Naša misija je da svakom pacijentu pružimo bezbedno,
-              komforno i blagovremeno prevoženje do željene destinacije.
+              Help Trans 011 je specijalizovana firma za privatni sanitetski prevoz i
+              medicinski transport pacijenata u Beogradu. Nalazimo se u centru grada,
+              što nam omogućava da stignemo za svega ~15 minuta. Pružamo kompletnu
+              uslugu od kreveta do kreveta — preuzimamo pacijenta i pratimo ga do odredišta.
             </p>
             <p className="text-gray-500 leading-relaxed mb-8">
-              Raspolažemo savremeno opremljenim vozilima i obučenim osobljem
-              koje brine o svakom pacijentu s pažnjom i profesionalnošću.
-              Dostupni smo non-stop, uključujući vikende i praznike.
+              Organizujemo prevoz nepokretnih i slabo pokretnih lica, sanitetski transport
+              unutar Srbije i međunarodni prevoz u inostranstvo. Raspolažemo savremeno
+              opremljenim vozilima i obučenim osobljem. Dostupni smo non-stop — sanitetski
+              prevoz 0-24h, sva dana u nedelji, vikendima i praznicima.
             </p>
 
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">

@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: "Koje oblasti pokrivate?",
-    a: "Primarno pokrivamo Beograd i širu okolinu. Organizujemo i međugradski prevoz pacijenata na teritoriji cele Srbije. Kontaktirajte nas za više detalja o konkretnoj destinaciji.",
+    a: "Primarno pokrivamo Beograd i širu okolinu. Organizujemo međugradski sanitetski prevoz na teritoriji cele Srbije, kao i međunarodni medicinski transport u inostranstvo — sve evropske zemlje. Kontaktirajte nas za više detalja.",
   },
   {
     q: "Da li vozila imaju medicinsku opremu?",
@@ -29,11 +29,19 @@ const faqs = [
   },
   {
     q: "Koliko brzo možete da stignete?",
-    a: "Vreme dolaska zavisi od lokacije i trenutne dostupnosti vozila. U Beogradu uglavnom stižemo u roku od 15–30 minuta. Za hitne slučajeve dajemo prioritet.",
+    a: "Nalazimo se u centru Beograda, što nam omogućava brz dolazak — u proseku stižemo za oko 15 minuta. Za hitne slučajeve dajemo prioritet i reagujemo odmah.",
   },
   {
     q: "Da li mogu da zakažem prevoz unapred?",
     a: "Apsolutno. Možete zakazati prevoz dan ili više dana unapred — preporučujemo to za redovne odlaske na dijalizu, hemioterapiju, kontrolne preglede i slično.",
+  },
+  {
+    q: "Da li nudite uslugu čekanja pacijenta?",
+    a: "Da, nudimo opciju čekanja pacijenta tokom pregleda, zahvata ili dijagnostike i povratni prevoz. Vozač čeka ispred ordinacije ili bolnice i vraća pacijenta kući — bez potrebe za novim pozivom.",
+  },
+  {
+    q: "Šta je usluga 'od kreveta do kreveta'?",
+    a: "Usluga od kreveta do kreveta znači da naš tim dolazi direktno do kreveta pacijenta (u kući ili bolnici), preuzima ga uz odgovarajuću opremu i dovodi do kreveta na odredištu. Idealno za nepokretne i slabo pokretne pacijente.",
   },
 ];
 

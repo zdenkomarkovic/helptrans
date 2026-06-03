@@ -6,13 +6,13 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center pt-16">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/unnamed.jpg"
+          src="/2149445656.jpg"
           alt="Help Trans 011 sanitetsko vozilo"
           fill
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-[#1f2937]/78" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#1f2937]/80 via-[#1f2937]/60 to-transparent" />
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 py-20 w-full">
@@ -30,10 +30,28 @@ export default function Hero() {
             <span className="text-[#f97316]">Prevoz Beograd</span>
           </h1>
 
-          <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-            Profesionalni i pouzdan medicinski transport pacijenata. Opremljena
-            vozila, iskusno osoblje — uvek tu kada nam je potrebno.
+          <p className="text-lg text-gray-300 mb-6 leading-relaxed">
+            Privatni sanitetski prevoz i medicinski transport pacijenata u Beogradu —
+            dostupni <strong className="text-white">0-24h</strong>. Prevoz nepokretnih i slabo pokretnih lica,
+            usluga od kreveta do kreveta, prevoz u inostranstvo.
           </p>
+
+          <div className="flex flex-wrap gap-2 mb-8">
+            {[
+              "⚡ Stižemo za ~15 minuta",
+              "🛏️ Od kreveta do kreveta",
+              "📍 Centar Beograda",
+              "✈️ Prevoz u inostranstvo",
+              "⏳ Čekanje pacijenta",
+            ].map((badge) => (
+              <span
+                key={badge}
+                className="bg-white/10 border border-white/20 text-white text-xs font-medium px-3 py-1.5 rounded-full backdrop-blur-sm"
+              >
+                {badge}
+              </span>
+            ))}
+          </div>
 
           <div className="flex flex-col sm:flex-row gap-4">
             <a
@@ -51,15 +69,21 @@ export default function Hero() {
             >
               Naše usluge
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
               </svg>
             </a>
           </div>
 
-          <div className="mt-12 grid grid-cols-3 gap-4 max-w-sm">
+          <div className="mt-12 grid grid-cols-4 gap-4 max-w-lg">
             {[
+              { value: "~15", label: "min dolazak" },
               { value: "24/7", label: "Dostupnost" },
-              { value: "011", label: "Beograd" },
+              { value: "0-24", label: "Sanitetski" },
               { value: "100%", label: "Pouzdanost" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
@@ -72,7 +96,12 @@ export default function Hero() {
       </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
-        <svg className="w-6 h-6 text-white/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg
+          className="w-6 h-6 text-white/40"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
       </div>

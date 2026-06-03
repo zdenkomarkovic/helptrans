@@ -8,13 +8,13 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-2">
-            <div className="mb-4">
+            <div className="mb-4 inline-block bg-white rounded-lg px-3 py-2">
               <Image
                 src="/logo.png"
                 alt="Help Trans 011 logo"
                 width={140}
                 height={48}
-                className="h-12 w-auto object-contain brightness-0 invert"
+                className="h-10 w-auto object-contain"
               />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
@@ -29,10 +29,11 @@ export default function Footer() {
             </h4>
             <ul className="flex flex-col gap-2">
               {[
-                { href: "#usluge", label: "Usluge" },
-                { href: "#o-nama", label: "O nama" },
-                { href: "#galerija", label: "Galerija" },
-                { href: "#kontakt", label: "Kontakt" },
+                { href: "/#usluge", label: "Usluge" },
+                { href: "/#o-nama", label: "O nama" },
+                { href: "/#galerija", label: "Galerija" },
+                { href: "/#kontakt", label: "Kontakt" },
+                { href: "/prevoz-u-inostranstvo", label: "Prevoz u inostranstvo" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link

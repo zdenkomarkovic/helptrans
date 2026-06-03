@@ -6,11 +6,13 @@ import Image from "next/image";
 import { PHONE, PHONE_HREF } from "@/lib/constants";
 
 const navLinks = [
-  { href: "#usluge", label: "Usluge" },
-  { href: "#o-nama", label: "O nama" },
-  { href: "#galerija", label: "Galerija" },
-  { href: "#kontakt", label: "Kontakt" },
+  { href: "/#usluge", label: "Usluge" },
+  { href: "/#o-nama", label: "O nama" },
+  { href: "/#galerija", label: "Galerija" },
+  { href: "/#kontakt", label: "Kontakt" },
 ];
+
+const inostranstvoLink = { href: "/prevoz-u-inostranstvo", label: "Prevoz u inostranstvo" };
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,6 +41,15 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
+          <Link
+            href={inostranstvoLink.href}
+            className="flex items-center gap-1.5 border border-[#f97316] text-[#f97316] hover:bg-[#f97316] hover:text-white px-3 py-1.5 rounded-lg font-semibold text-sm transition-colors"
+          >
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 0 1 2 2v1a2 2 0 0 0 2 2 2 2 0 0 1 2 2v2.945M8 3.935V5.5A2.5 2.5 0 0 0 10.5 8h.5a2 2 0 0 1 2 2 2 2 0 0 0 4 0 2 2 0 0 1 2-2h1.064M15 20.488V18a2 2 0 0 1 2-2h3.064" />
+            </svg>
+            {inostranstvoLink.label}
+          </Link>
         </nav>
 
         <a
@@ -81,6 +92,16 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+            <Link
+              href={inostranstvoLink.href}
+              onClick={() => setMenuOpen(false)}
+              className="flex items-center gap-2 border border-[#f97316] text-[#f97316] px-3 py-2 rounded-lg font-semibold text-sm mt-1"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 0 1 2 2v1a2 2 0 0 0 2 2 2 2 0 0 1 2 2v2.945M8 3.935V5.5A2.5 2.5 0 0 0 10.5 8h.5a2 2 0 0 1 2 2 2 2 0 0 0 4 0 2 2 0 0 1 2-2h1.064M15 20.488V18a2 2 0 0 1 2-2h3.064" />
+              </svg>
+              {inostranstvoLink.label}
+            </Link>
             <a
               href={PHONE_HREF}
               className="mt-2 flex items-center justify-center gap-2 bg-[#f97316] text-white px-4 py-3 rounded-lg font-semibold text-sm"
