@@ -1,14 +1,14 @@
 import Image from "next/image";
 
 const images = [
-  { src: "/unnamed (2).jpg", alt: "Sanitetsko vozilo Help Trans 011" },
-  { src: "/unnamed (3).jpg", alt: "Medicinska oprema u vozilu" },
-  { src: "/unnamed (4).jpg", alt: "Help Trans 011 vozni park" },
-  { src: "/unnamed (5).jpg", alt: "Prevoz pacijenata Beograd" },
-  { src: "/unnamed (6).jpg", alt: "Sanitetski prevoz tim" },
-  { src: "/unnamed (7).jpg", alt: "Help Trans 011 u akciji" },
-  { src: "/unnamed.webp", alt: "Sanitetsko vozilo exterior" },
-  { src: "/unnamed (1).webp", alt: "Oprema za prevoz" },
+  { src: "/WhatsApp%20Image%202026-06-04%20at%2008.39.14%20(1).jpeg",  alt: "Sanitetsko vozilo Help Trans 011" },
+  { src: "/WhatsApp%20Image%202026-06-04%20at%2008.39.14%20(2).jpeg",  alt: "Medicinska oprema u sanitetskom vozilu" },
+  { src: "/WhatsApp%20Image%202026-06-04%20at%2008.39.14%20(3).jpeg",  alt: "Help Trans 011 vozni park Beograd" },
+  { src: "/WhatsApp%20Image%202026-06-04%20at%2008.39.14%20(4).jpeg",  alt: "Prevoz pacijenata Beograd" },
+  { src: "/WhatsApp%20Image%202026-06-04%20at%2008.39.14%20(5).jpeg",  alt: "Sanitetski prevoz tim Help Trans" },
+  { src: "/WhatsApp%20Image%202026-06-04%20at%2008.39.14%20(7).jpeg",  alt: "Help Trans 011 u akciji" },
+  { src: "/WhatsApp%20Image%202026-06-04%20at%2008.40.13.jpeg",        alt: "Unutrašnjost sanitetskog vozila" },
+  { src: "/WhatsApp%20Image%202026-06-04%20at%2008.40.14.jpeg",        alt: "Oprema za prevoz nepokretnih pacijenata" },
 ];
 
 export default function Gallery() {

@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center pt-16">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/2149445656.jpg"
+          src="/hero.jpg"
           alt="Help Trans 011 sanitetsko vozilo"
           fill
           className="object-cover"
@@ -31,9 +31,9 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-            Privatni sanitetski prevoz i medicinski transport pacijenata u Beogradu —
-            dostupni <strong className="text-white">0-24h</strong>. Prevoz nepokretnih i slabo pokretnih lica,
-            usluga od kreveta do kreveta, prevoz u inostranstvo.
+            Privatni sanitetski prevoz i medicinski transport pacijenata u Beogradu — dostupni{" "}
+            <strong className="text-white">0-24h</strong>. Prevoz nepokretnih i slabo pokretnih
+            lica, usluga od kreveta do kreveta, prevoz u inostranstvo.
           </p>
 
           <div className="flex flex-wrap gap-2 mb-8">

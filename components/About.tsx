@@ -20,7 +20,7 @@ export default function About() {
           <div className="relative">
             <div className="relative h-80 lg:h-[500px] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/unnamed (1).jpg"
+                src="/WhatsApp%20Image%202026-06-04%20at%2008.39.14.jpeg"
                 alt="Help Trans 011 tim"
                 fill
                 className="object-cover"

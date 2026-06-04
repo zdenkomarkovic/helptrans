@@ -42,7 +42,7 @@ export const metadata: Metadata = {
       "Privatni sanitetski prevoz i medicinski transport pacijenata u Beogradu. Prevoz nepokretnih lica, od kreveta do kreveta, međunarodni prevoz. Stižemo za ~15 minuta, dostupni 0-24h.",
     images: [
       {
-        url: "/2149445656.jpg",
+        url: "/hero.jpg",
         width: 1200,
         height: 630,
         alt: "Help Trans 011 — Sanitetski Prevoz Beograd",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     title: "Help Trans 011 | Sanitetski Prevoz Beograd 0-24h",
     description:
       "Privatni sanitetski prevoz u Beogradu. Prevoz nepokretnih lica, od kreveta do kreveta, međunarodni prevoz. Stižemo za ~15 minuta.",
-    images: ["/2149445656.jpg"],
+    images: ["/hero.jpg"],
   },
 };
 
