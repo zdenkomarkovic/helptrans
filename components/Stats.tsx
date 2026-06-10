@@ -1,7 +1,7 @@
 const stats = [
   { value: "~15 min", label: "Prosečno vreme dolaska u Beogradu" },
   { value: "0-24h", label: "Sanitetski prevoz non-stop" },
-  { value: "15+", label: "Opština Beograda u pokrivenosti" },
+  { value: "100%", label: "Pouzdanost" },
   { value: "EU", label: "Međunarodni prevoz u inostranstvo" },
 ];
 
