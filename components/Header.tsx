@@ -20,7 +20,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center gap-2">
           <Image
             src="/logo.png"
             alt="Help Trans 011 logo"
@@ -29,6 +29,9 @@ export default function Header() {
             className="h-10 w-auto object-contain"
             priority
           />
+          <span className="font-bold text-[#374151] text-base leading-tight">
+            Help Trans
+          </span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">

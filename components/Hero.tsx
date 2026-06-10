@@ -16,7 +16,7 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 py-20 w-full">
-        <div className="max-w-2xl">
+        <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 bg-[#f97316] text-white text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75" />
@@ -25,9 +25,9 @@ export default function Hero() {
             Dostupni 24h / 7 dana
           </div>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-            Sanitetski <br />
-            <span className="text-[#f97316]">Prevoz Beograd</span>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
+            Sanitetski Prevoz Beograd
+            <br /><span className="text-[#f97316]">Help Trans</span>
           </h1>
 
           <p className="text-lg text-gray-300 mb-6 leading-relaxed">

@@ -32,6 +32,9 @@ export const metadata: Metadata = {
     "help trans 011",
     "Beograd",
   ],
+  alternates: {
+    canonical: SITE_URL,
+  },
   openGraph: {
     type: "website",
     locale: "sr_RS",

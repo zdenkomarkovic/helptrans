@@ -1,5 +1,5 @@
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://sanitetskiprevoz-beograd.rs";
 
 export const SITE_NAME = "Help Trans 011 - Sanitetski Prevoz Beograd";
 

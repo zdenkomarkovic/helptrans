@@ -23,11 +23,22 @@ export const metadata: Metadata = {
     "prevoz pacijenata inostranstvo",
     "međunarodni medicinski transport",
   ],
+  alternates: {
+    canonical: `${SITE_URL}/prevoz-u-inostranstvo`,
+  },
   openGraph: {
     title: "Međunarodni Sanitetski Prevoz u Inostranstvo | Help Trans 011",
     description:
       "Prevoz pacijenata u sve evropske zemlje. Opremljena vozila, medicinsko osoblje, dokumentacija. Dostupni 0-24h.",
     url: `${SITE_URL}/prevoz-u-inostranstvo`,
+    images: [
+      {
+        url: `${SITE_URL}/hero.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Help Trans 011 — Međunarodni Sanitetski Prevoz",
+      },
+    ],
   },
 };
 
@@ -98,6 +109,19 @@ const faqs = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
+};
+
 const schema = {
   "@context": "https://schema.org",
   "@type": "MedicalBusiness",
@@ -119,6 +143,7 @@ export default function InostranstvoPage() {
       <Header />
       <main className="pb-16 md:pb-0">
         <JsonLd data={schema} />
+        <JsonLd data={faqSchema} />
 
         {/* Hero */}
         <section className="bg-[#1f2937] pt-32 pb-20">
