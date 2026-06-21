@@ -22,7 +22,7 @@ const localBusinessSchema = {
   description:
     "Privatni sanitetski prevoz i medicinski transport pacijenata u Beogradu. Prevoz nepokretnih i slabo pokretnih lica, usluga od kreveta do kreveta, međunarodni prevoz. Dostupni 0-24h.",
   url: SITE_URL,
-  telephone: "+381606054546",
+  telephone: "+381628677096",
   priceRange: "$$",
   address: {
     "@type": "PostalAddress",

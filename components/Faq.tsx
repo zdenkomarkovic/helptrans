@@ -102,7 +102,7 @@ export default function Faq() {
         <div className="mt-10 text-center">
           <p className="text-gray-400 text-sm mb-4">Niste pronašli odgovor? Slobodno nas pozovite.</p>
           <a
-            href="tel:+381606054546"
+            href="tel:+381628677096"
             className="inline-flex items-center gap-2 bg-[#f97316] hover:bg-[#ea580c] text-white px-6 py-3 rounded-xl font-semibold transition-colors"
           >
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">

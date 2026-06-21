@@ -129,7 +129,7 @@ const schema = {
   description:
     "Međunarodni sanitetski prevoz i medicinski transport pacijenata u inostranstvo. Sve evropske zemlje. Dostupni 0-24h.",
   url: `${SITE_URL}/prevoz-u-inostranstvo`,
-  telephone: "+381606054546",
+  telephone: "+381628677096",
   areaServed: "Europe",
   availableService: {
     "@type": "MedicalTherapy",
