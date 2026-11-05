@@ -1,14 +1,14 @@
 import Image from "next/image";
 
 const images = [
-  { src: "/WhatsApp%20Image%202026-06-04%20at%2008.39.14%20(1).jpeg",  alt: "Sanitetsko vozilo Help Trans 011" },
-  { src: "/WhatsApp%20Image%202026-06-04%20at%2008.39.14%20(2).jpeg",  alt: "Medicinska oprema u sanitetskom vozilu" },
-  { src: "/WhatsApp%20Image%202026-06-04%20at%2008.39.14%20(3).jpeg",  alt: "Help Trans 011 vozni park Beograd" },
-  { src: "/WhatsApp%20Image%202026-06-04%20at%2008.39.14%20(4).jpeg",  alt: "Prevoz pacijenata Beograd" },
-  { src: "/WhatsApp%20Image%202026-06-04%20at%2008.39.14%20(5).jpeg",  alt: "Sanitetski prevoz tim Help Trans" },
-  { src: "/WhatsApp%20Image%202026-06-04%20at%2008.39.14%20(7).jpeg",  alt: "Help Trans 011 u akciji" },
-  { src: "/WhatsApp%20Image%202026-06-04%20at%2008.40.13.jpeg",        alt: "Unutrašnjost sanitetskog vozila" },
-  { src: "/WhatsApp%20Image%202026-06-04%20at%2008.40.14.jpeg",        alt: "Oprema za prevoz nepokretnih pacijenata" },
+  { src: "/sanitetsko-vozilo-help-trans-beograd.jpeg", alt: "Sanitetsko vozilo Help Trans 011 u Beogradu" },
+  { src: "/medicinska-oprema-sanitetsko-vozilo.jpeg", alt: "Medicinska oprema u sanitetskom vozilu" },
+  { src: "/vozni-park-sanitetski-prevoz-beograd.jpeg", alt: "Vozni park Help Trans 011 — sanitetski prevoz Beograd" },
+  { src: "/prevoz-pacijenata-beograd.jpeg", alt: "Prevoz pacijenata u Beogradu sanitetskim vozilom" },
+  { src: "/tim-sanitetski-prevoz-help-trans.jpeg", alt: "Tim za sanitetski prevoz Help Trans 011" },
+  { src: "/sanitetski-transport-pacijenata.jpeg", alt: "Sanitetski transport pacijenata od kreveta do kreveta" },
+  { src: "/unutrasnjost-sanitetskog-vozila.jpeg", alt: "Unutrašnjost sanitetskog vozila za prevoz pacijenata" },
+  { src: "/prevoz-nepokretnih-pacijenata-oprema.jpeg", alt: "Oprema za prevoz nepokretnih pacijenata" },
 ];
 
 export default function Gallery() {
@@ -42,6 +42,7 @@ export default function Gallery() {
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 sizes="(max-width: 768px) 50vw, 25vw"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-[#374151]/0 group-hover:bg-[#374151]/25 transition-colors duration-300" />
             </div>

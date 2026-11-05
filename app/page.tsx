@@ -22,11 +22,15 @@ const localBusinessSchema = {
   description:
     "Privatni sanitetski prevoz i medicinski transport pacijenata u Beogradu. Prevoz nepokretnih i slabo pokretnih lica, usluga od kreveta do kreveta, međunarodni prevoz. Dostupni 0-24h.",
   url: SITE_URL,
+  "@id": `${SITE_URL}/#organization`,
+  image: `${SITE_URL}/hero.jpg`,
+  logo: `${SITE_URL}/logo.png`,
   telephone: "+381628677096",
-  priceRange: "$$",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Beograd",
+    addressRegion: "Beograd",
+    // TODO: dodati streetAddress i postalCode (mora da se poklapa sa Google Business Profile)
     addressCountry: "RS",
   },
   geo: {
@@ -59,6 +63,14 @@ const localBusinessSchema = {
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Privatni medicinski transport" } },
     ],
   },
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Help Trans 011",
+  url: SITE_URL,
+  inLanguage: "sr-RS",
 };
 
 const faqSchema = {
@@ -112,6 +124,7 @@ export default function HomePage() {
   return (
     <>
       <JsonLd data={localBusinessSchema} />
+      <JsonLd data={websiteSchema} />
       <JsonLd data={faqSchema} />
       <Header />
       <main className="pb-16 md:pb-0">

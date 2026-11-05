@@ -8,9 +8,9 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { PHONE, PHONE_HREF, WHATSAPP_HREF, SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Međunarodni Sanitetski Prevoz — Prevoz u Inostranstvo | Help Trans 011",
+  title: "Međunarodni Sanitetski Prevoz — Prevoz u Inostranstvo",
   description:
-    "Međunarodni sanitetski prevoz i medicinski transport pacijenata u inostranstvo — Nemačka, Austrija, Švajcarska, Slovenija, Hrvatska i sve EU/EEA zemlje. Dostupni 0-24h. Pozovite 060 605 4546.",
+    "Međunarodni sanitetski prevoz i medicinski transport pacijenata u inostranstvo — Nemačka, Austrija, Švajcarska, Slovenija, Hrvatska i sve EU/EEA zemlje. Dostupni 0-24h. Pozovite 062 867 7096.",
   keywords: [
     "međunarodni sanitetski prevoz",
     "prevoz u inostranstvo",
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: `${SITE_URL}/hero.jpg`,
-        width: 1200,
-        height: 630,
+        width: 1000,
+        height: 667,
         alt: "Help Trans 011 — Međunarodni Sanitetski Prevoz",
       },
     ],
@@ -124,17 +124,34 @@ const faqSchema = {
 
 const schema = {
   "@context": "https://schema.org",
-  "@type": "MedicalBusiness",
-  name: "Help Trans 011 — Međunarodni Sanitetski Prevoz",
+  "@type": "Service",
+  name: "Međunarodni sanitetski prevoz",
+  serviceType: "Međunarodni medicinski transport pacijenata",
   description:
     "Međunarodni sanitetski prevoz i medicinski transport pacijenata u inostranstvo. Sve evropske zemlje. Dostupni 0-24h.",
   url: `${SITE_URL}/prevoz-u-inostranstvo`,
-  telephone: "+381628677096",
-  areaServed: "Europe",
-  availableService: {
-    "@type": "MedicalTherapy",
-    name: "Međunarodni medicinski transport pacijenata",
+  areaServed: { "@type": "Place", name: "Evropa" },
+  provider: {
+    "@type": ["LocalBusiness", "MedicalBusiness"],
+    "@id": `${SITE_URL}/#organization`,
+    name: "Help Trans 011",
+    telephone: "+381628677096",
+    url: SITE_URL,
   },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Početna", item: SITE_URL },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Prevoz u inostranstvo",
+      item: `${SITE_URL}/prevoz-u-inostranstvo`,
+    },
+  ],
 };
 
 export default function InostranstvoPage() {
@@ -144,6 +161,7 @@ export default function InostranstvoPage() {
       <main className="pb-16 md:pb-0">
         <JsonLd data={schema} />
         <JsonLd data={faqSchema} />
+        <JsonLd data={breadcrumbSchema} />
 
         {/* Hero */}
         <section className="bg-[#1f2937] pt-32 pb-20">

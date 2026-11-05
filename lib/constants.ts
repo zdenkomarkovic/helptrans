@@ -1,9 +1,11 @@
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://sanitetskiprevoz-beograd.rs";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.sanitetskiprevoz-beograd.rs";
 
 export const SITE_NAME = "Help Trans 011 - Sanitetski Prevoz Beograd";
 
 export const PHONE = "0628677096";
+export const PHONE_DISPLAY = "062 867 7096";
+export const PHONE_E164 = "+381628677096";
 export const PHONE_HREF = "tel:+381628677096";
 export const WHATSAPP_HREF = "https://wa.me/381628677096";
 export const VIBER_HREF = "viber://chat?number=%2B381628677096";

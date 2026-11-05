@@ -10,11 +10,11 @@ const inter = Inter({ subsets: ["latin", "latin-ext"] });
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Help Trans 011 | Sanitetski Prevoz Beograd",
+    default: "Sanitetski Prevoz Beograd 0-24h | Help Trans 011",
     template: `%s | Help Trans 011`,
   },
   description:
-    "Help Trans 011 — privatni sanitetski prevoz i medicinski transport pacijenata u Beogradu. Prevoz nepokretnih i slabo pokretnih lica, usluga od kreveta do kreveta, međunarodni prevoz. Stižemo za ~15 minuta, dostupni 0-24h. Pozovite 060 605 4546.",
+    "Help Trans 011 — privatni sanitetski prevoz i medicinski transport pacijenata u Beogradu. Prevoz nepokretnih i slabo pokretnih lica, usluga od kreveta do kreveta, međunarodni prevoz. Stižemo za ~15 minuta, dostupni 0-24h. Pozovite 062 867 7096.",
   keywords: [
     "sanitetski prevoz",
     "sanitetski transport",
@@ -37,6 +37,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: SITE_URL,
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  category: "Medical transportation",
   openGraph: {
     type: "website",
     locale: "sr_RS",
@@ -48,8 +59,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/hero.jpg",
-        width: 1200,
-        height: 630,
+        width: 1000,
+        height: 667,
         alt: "Help Trans 011 — Sanitetski Prevoz Beograd",
       },
     ],

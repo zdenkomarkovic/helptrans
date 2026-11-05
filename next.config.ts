@@ -6,6 +6,8 @@ const nextConfig: NextConfig = {
 
   // Optimizacija slika - dodaj domene po potrebi
   images: {
+    formats: ["image/avif", "image/webp"],
+    minimumCacheTTL: 60 * 60 * 24 * 30,
     remotePatterns: [
       // Google profile photos za recenzije
       {
@@ -13,6 +15,18 @@ const nextConfig: NextConfig = {
         hostname: "lh3.googleusercontent.com",
       },
     ],
+  },
+
+  // Redirect non-www -> www (canonical domen)
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "sanitetskiprevoz-beograd.rs" }],
+        destination: "https://www.sanitetskiprevoz-beograd.rs/:path*",
+        permanent: true,
+      },
+    ];
   },
 
   // Headers za bolju sigurnost
